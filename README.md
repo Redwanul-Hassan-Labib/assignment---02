@@ -7,11 +7,11 @@ Supports authentication, user management, vehicle management, and booking system
 
 ## 🔗 Live URL
 
-[(Add your live deployed API URL here)](https://assignment-02-orpin.vercel.app/)
+https://assignment-02-orpin.vercel.app/
 
 ## 📦 Repository
 
-[(Add your GitHub repo link here)](https://github.com/Redwanul-Hassan-Labib/assignment---02.git)
+https://github.com/Redwanul-Hassan-Labib/assignment---02.git
 
 ---
 
