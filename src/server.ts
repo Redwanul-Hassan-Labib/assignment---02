@@ -1,0 +1,12 @@
+import express from "express";
+import config from "./config/env_config";
+import app from "./app";
+
+
+
+
+const port = config.port;
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
