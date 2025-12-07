@@ -18,7 +18,7 @@ https://github.com/Redwanul-Hassan-Labib/assignment---02.git
 # 🚀 Features
 
 * User Authentication (Signup / Signin)
-* Role-based Access (User/Admin)
+* Role-based Access (customer/Admin)
 * Vehicle CRUD operations
 * Booking system
 * User management
@@ -31,7 +31,7 @@ https://github.com/Redwanul-Hassan-Labib/assignment---02.git
 
 * **Node.js**
 * **Express.js**
-* **MongoDB + Mongoose**
+* **PostgreSQL + NeonBD**
 * **JWT Authentication**
 * **bcrypt Password Hashing**
 * **dotenv for environment config**
