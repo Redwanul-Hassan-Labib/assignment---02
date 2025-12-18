@@ -5,8 +5,8 @@ import loginAuth from "../../middleware/auth";
 
 const routes = Router()
 
-routes.post("/" , loginAuth("admin" , "customer"),  bookingController.postBookingController)
+routes.post("/" , loginAuth("admin" , "customer"),  bookingController.postBookingController) 
 routes.get("/" , bookingController.getBookingController)
-routes.put("/:bookingId" , bookingController.putBookingController)
+routes.put("/:id" , bookingController.putBookingController)
 
 export const bookingRoutes = routes
