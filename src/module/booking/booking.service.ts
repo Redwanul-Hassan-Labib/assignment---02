@@ -55,7 +55,7 @@ const postBookingService = async (payload: {
 
 
 const getBookingService = async () => {
-  const result = await pool.query(`SELECT * FROM bookings`);
+  const result = await pool.query(`SELECT * FROM bookings JOIN vehicles USING(id)`);
 
   return result;
 };

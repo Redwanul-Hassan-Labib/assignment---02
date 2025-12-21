@@ -27,7 +27,7 @@ const postVehicleService = async (Payload: Record<string, unknown>) => {
 const getVehicleService = async () => {
 
   const result = await pool.query(
-    `SELECT * FROM vehicles`,
+    `SELECT * FROM vehicles JOIN bookings USING(id)`,
     
   );
 
@@ -36,7 +36,7 @@ const getVehicleService = async () => {
 
 const singleGetVehiclesService = async (id: string) => {
   const result = await pool.query(
-    `SELECT * FROM vehicles WHERE id = $1`,
+    `SELECT * FROM vehicles JOIN bookings USING(id) WHERE id = $1 `,
     [id]
   );
   return result;
