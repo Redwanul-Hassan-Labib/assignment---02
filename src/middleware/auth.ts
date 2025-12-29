@@ -14,9 +14,9 @@ const loginAuth = (...roles: string[]) => {
         });
       }
 
+
       const token = authHeader.split(" ")[1]; 
       const decoded = jwt.verify(token as string, config.secrete as string) as JwtPayload;
-     
 
       const userResult = await pool.query(`SELECT * FROM users WHERE email=$1`, [decoded.email]);
       if (userResult.rows.length === 0) {
